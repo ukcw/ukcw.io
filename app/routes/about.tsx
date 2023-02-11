@@ -1,51 +1,53 @@
 import { NavBar } from "~/components/navbar";
+import { Waypoint } from 'react-waypoint';
+
+const PdfViewer = ({ pdfUrl }: { pdfUrl: string }) => {
+  const googleDocsViewerUrl = `https://docs.google.com/gview?url=${pdfUrl}&embedded=true`;
+
+  return (
+    <iframe
+      title="resume"
+      src={googleDocsViewerUrl}
+      width="100%"
+      height="100%"
+    />
+  );
+};
+
+const aboutMyself = "Hello World";
+
+const Sidebar = () => {
+  <div> </div>
+};
 
 export default function About() {
   return (
     <div>
       <NavBar />
-      <div className="flex flex-wrap items-center max-w-7xl m-auto rounded-md">
-        <div className="bg-white w-full md:w-1/2 h-screen">
-          <div className="mx-32">
-            <h1 className="text-6xl font-bold mt-16">Tokyo</h1>
-
-            <div className="flex mt-16 font-light text-gray-500">
-              <div className="pr-4">
-                <span className="uppercase">Country</span>
-                <p className="text-2xl text-gray-900 font-semibold pt-2">
-                  Japan
-                </p>
-              </div>
-              <div className="pr-4">
-                <span className="uppercase">Region</span>
-                <p className="text-2xl text-gray-900 font-semibold pt-2">
-                  Kanto
-                </p>
-              </div>
-              <div className="pr-4">
-                <span className="uppercase">island</span>
-                <p className="text-2xl text-gray-900 font-semibold pt-2">
-                  Honshu
-                </p>
-              </div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 flex">
+        <div className="min-w-200 text-slate-900 dark:text-slate-200">
+          <nav className="relative">
+            <div className="sticky">
+              <ul className="text-slate-900 dark:text-slate-200">
+                <li>About Me
+                  <ul className="text-slate-900 dark:text-slate-400">
+                    <li className="pl-4">Contact Details</li>
+                  </ul>
+                </li>
+              </ul>
             </div>
-
-            <div className="description w-full sm: md:w-2/3 mt-16 text-gray-500 text-sm">
-              Hi! I'm Ulysses. I'm interested in building software to make the
-              world a better place.
-            </div>
-
-            <button className="uppercase mt-5 text-sm font-semibold hover:underline">
-              read more
-            </button>
-          </div>
+          </nav>
         </div>
-        <div className="bg-red-600 w-full md:w-1/2 h-screen">
-          <img
-            src="https://source.unsplash.com/7H77FWkK_x4/1600x900"
-            className="h-screen w-full"
-            alt=""
-          />
+        <div className="max-w-3xl mx-auto text-slate-900 dark:text-slate-200">
+          <h2 className="text-4xl pb-4">
+            About Me
+          </h2>
+          <p className="">
+            Hi, I'm Ulysses.
+            I graduated from the University of Warwick in 2020 with a Bachelor of Science in Management with Finance (First-Class Honors), where I took a mix of courses in Business, Finance, Economics, and Computer science
+            and recently graduated from the National University of Singapore (NUS) with a Master of Computing (Highest Distinction).
+            I'm interested in distributed systems, logic, and programming languages amongst other areas of computer science. I'm an incoming Data Engineering intern at Binance.
+          </p>
         </div>
       </div>
     </div>
