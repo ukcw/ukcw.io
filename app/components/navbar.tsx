@@ -2,7 +2,7 @@ import { Link } from "@remix-run/react";
 
 const navLinks = [
   { title: "Projects", route: "/projects" },
-  { title: "Résumé", route: "/resume" },
+  { title: "Resume", route: "/resume" },
   { title: "About", route: "/about" },
 ];
 
@@ -13,7 +13,7 @@ export function NavBar() {
         <div className="flex justify-center gap-4 align-middle">
           <Link
             to="/"
-            className="text-white block whitespace-nowrap text-2xl font-medium hover:underline underline-offset-8"
+            className="dark:text-white block whitespace-nowrap text-2xl font-medium hover:underline underline-offset-8"
           >
             <h1>Ulysses Kee</h1>
           </Link>
@@ -23,7 +23,7 @@ export function NavBar() {
             <li className="px-5 py-2" key={item.title}>
               <Link
                 to={`${item.route}`}
-                className="block text-lg whitespace-nowrap font-medium hover:underline focus:underline focus:outline-none active text-white underline-offset-8"
+                className="block text-lg whitespace-nowrap font-medium hover:underline focus:underline focus:outline-none active dark:text-white underline-offset-8"
               >
                 {item.title}
               </Link>
