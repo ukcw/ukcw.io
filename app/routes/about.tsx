@@ -38,16 +38,38 @@ export default function About() {
             </div>
           </nav>
         </div>
-        <div className="max-w-3xl mx-auto text-slate-900 dark:text-slate-200">
-          <h2 className="text-4xl pb-4">
-            About Me
-          </h2>
-          <p className="">
-            Hi, I'm Ulysses.
-            I graduated from the University of Warwick in 2020 with a Bachelor of Science in Management with Finance (First-Class Honors), where I took a mix of courses in Business, Finance, Economics, and Computer science
-            and recently graduated from the National University of Singapore (NUS) with a Master of Computing (Highest Distinction).
-            I'm interested in distributed systems, logic, and programming languages amongst other areas of computer science. I'm an incoming Data Engineering intern at Binance.
-          </p>
+        <div className="max-w-3xl mx-auto text-slate-900 dark:text-slate-200 divide-y">
+          <div className="pb-4">
+            <h2 className="text-4xl pb-4">
+              About Me
+            </h2>
+            <p className="">
+              Hi, I'm Ulysses.
+              I graduated from the University of Warwick in 2020 with a Bachelor of Science in Management with Finance (First-Class Honors), where I took a mix of courses in Business, Finance, Economics, and Computer science
+              and recently graduated from the National University of Singapore (NUS) with a Master of Computing (Highest Distinction).
+              I'm interested in distributed systems, logic, and programming languages amongst other areas of computer science. I'm an incoming Data Engineering intern at Binance.
+            </p>
+          </div>
+          <div className="pb-4">
+            <h2 className="text-4xl pt-4 pb-4">
+              Work Experience
+            </h2>
+          </div>
+          <div className="pb-4">
+            <h2 className="text-4xl pt-4 pb-4">
+              Projects
+            </h2>
+          </div>
+          <div className="pb-4">
+            <h2 className="text-4xl pt-4 pb-4">
+              Education
+            </h2>
+          </div>
+          <div className="pb-4">
+            <h2 className="text-4xl pt-4 pb-4">
+              Skills
+            </h2>
+          </div>
         </div>
       </div>
     </div>
