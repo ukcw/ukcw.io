@@ -4,6 +4,7 @@ const navLinks = [
   { title: "Projects", route: "/projects" },
   { title: "Resume", route: "/resume" },
   { title: "About", route: "/about" },
+  { title: "Notes", route: "/notes" },
 ];
 
 export function NavBar() {
