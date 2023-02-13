@@ -45,7 +45,7 @@ export default function About() {
             </h2>
             <p className="pt-4">
               Hi, I'm Ulysses.
-              I graduated from the University of Warwick in 2020 with a Bachelor of Science in Management with Finance (First-Class Honors), where I took a mix of courses in Business, Finance, Economics, and Computer science
+              I graduated from the University of Warwick in 2020 with a Bachelor of Science in Management with Finance (First-Class Honors), where I took a mix of courses in Business, Finance, Economics, and Computer Science
               and recently graduated from the National University of Singapore (NUS) with a Master of Computing (Highest Distinction).
               I'm interested in distributed systems, logic, and programming languages amongst other areas of computer science. I'm an incoming Data Engineering intern at Binance.
             </p>
