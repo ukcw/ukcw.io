@@ -57,12 +57,38 @@ export default function About() {
             <div className="pt-4">
               <div>
                 <h3 className="text-2xl">Binance</h3>
+                <p className="pt-2"><span className="italic">Data Engineering Intern</span> &middot; Feb 2023 - Mar 2023</p>
+                <ul className="pt-2 list-disc list-inside">
+                  <li>Details to be added</li>
+                </ul>
               </div>
-              <div>
+              <div className="pt-4">
                 <h3 className="text-2xl">Singapore Blockchain Innovation Programme (NUS-SBIP)</h3>
+                <p className="pt-2"><span className="italic">Software Engineering Intern</span> &middot; Aug 2022 - Feb 2023</p>
+                <ul className="pt-2 list-disc list-inside">
+                  <li>Working on improving the frontend UI of Verazt, a static analysis tool used to automatically find security bugs and vulnerabilities in smart contracts.</li>
+                  <li>Working on the visualization of call graphs for analysing the structure of Solidity smart contracts in React.</li>
+                  <li>Working on the parsing of semantic tests from the official Solidity repository into internal Rust data structures
+                    using the pest parser.</li>
+                </ul>
               </div>
-              <div>
+              <div className="pt-4">
                 <h3 className="text-2xl">Cloudflare</h3>
+                <p className="pt-2"><span className="italic">Software Development Intern</span> &middot; Dec 2021 - May 2022</p>
+                <ul className="pt-2 list-disc list-inside">
+                  <li>Developed FlareTools, a web-based application using React and Cloudflare Workers, to help internal teams and partners gain better visibility over product configurations, and copy configuration records and settings easily.</li>
+                  <li>Developed a set of REST API services deployed on Cloudflare Workers which was used to interface with the Cloudflare v4 APIs.</li>
+                  <li>Presented my project in a global company-wide meeting and published a blog about it.</li>
+                </ul>
+              </div>
+              <div className="pt-4">
+                <h3 className="text-2xl">Canopy</h3>
+                <p className="pt-2"><span className="italic">Data Analyst</span> &middot; Jul 2020 - Jun 2021</p>
+                <ul className="pt-2 list-disc list-inside">
+                  <li>Worked with Python to clean and transform parsed raw data into a standardized format used for downstream
+                    financial analysis and processing.
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
