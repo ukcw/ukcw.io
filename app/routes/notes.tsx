@@ -1,7 +1,7 @@
 export default function Notes() {
   return (
-    <div>
-      <h1>To be added.</h1>
+    <div className="m-20 mx-auto">
+      <h1 className="pl-8">To be added.</h1>
     </div>
   )
 }
