@@ -1,5 +1,6 @@
 import { NavBar } from "~/components/navbar";
 import { Waypoint } from 'react-waypoint';
+import TableOfContents from "~/components/tableOfContents";
 
 const PdfViewer = ({ pdfUrl }: { pdfUrl: string }) => {
   const googleDocsViewerUrl = `https://docs.google.com/gview?url=${pdfUrl}&embedded=true`;
@@ -28,6 +29,7 @@ export default function About() {
         <div className="min-w-200 text-slate-900 dark:text-slate-200">
           <nav className="relative">
             <div className="sticky">
+              <TableOfContents />
               <ul className="text-slate-900 dark:text-slate-200">
                 <li>About Me
                   <ul className="text-slate-900 dark:text-slate-400">
@@ -40,7 +42,7 @@ export default function About() {
         </div>
         <div className="max-w-3xl mx-auto text-slate-900 dark:text-slate-200">
           <div className="pb-4 divide-y">
-            <h2 className="text-4xl pb-4">
+            <h2 id="about-me" className="text-4xl pb-4">
               About Me
             </h2>
             <p className="pt-4">
@@ -51,19 +53,19 @@ export default function About() {
             </p>
           </div>
           <div className="pb-4 divide-y">
-            <h2 className="text-4xl pt-4 pb-4">
+            <h2 id="work-experience" className="text-4xl pt-4 pb-4">
               Work Experience
             </h2>
             <div className="pt-4">
               <div>
-                <h3 className="text-2xl">Binance</h3>
+                <h3 id="binance" className="text-2xl">Binance</h3>
                 <p className="pt-2"><span className="italic">Data Engineering Intern</span> &middot; Feb 2023 - Mar 2023</p>
                 <ul className="pt-2 list-disc list-inside">
                   <li>Details to be added</li>
                 </ul>
               </div>
               <div className="pt-4">
-                <h3 className="text-2xl">Singapore Blockchain Innovation Programme (NUS-SBIP)</h3>
+                <h3 id="singapore-blockchain-innovation-programme" className="text-2xl">Singapore Blockchain Innovation Programme (NUS-SBIP)</h3>
                 <p className="pt-2"><span className="italic">Software Engineering Intern</span> &middot; Aug 2022 - Feb 2023</p>
                 <ul className="pt-2 list-disc list-inside">
                   <li>Working on improving the frontend UI of Verazt, a static analysis tool used to automatically find security bugs and vulnerabilities in smart contracts.</li>
@@ -73,7 +75,7 @@ export default function About() {
                 </ul>
               </div>
               <div className="pt-4">
-                <h3 className="text-2xl">Cloudflare</h3>
+                <h3 id="cloudflare" className="text-2xl">Cloudflare</h3>
                 <p className="pt-2"><span className="italic">Software Development Intern</span> &middot; Dec 2021 - May 2022</p>
                 <ul className="pt-2 list-disc list-inside">
                   <li>Developed FlareTools, a web-based application using React and Cloudflare Workers, to help internal teams and partners gain better visibility over product configurations, and copy configuration records and settings easily.</li>
@@ -82,7 +84,7 @@ export default function About() {
                 </ul>
               </div>
               <div className="pt-4">
-                <h3 className="text-2xl">Canopy</h3>
+                <h3 id="canopy" className="text-2xl">Canopy</h3>
                 <p className="pt-2"><span className="italic">Data Analyst</span> &middot; Jul 2020 - Jun 2021</p>
                 <ul className="pt-2 list-disc list-inside">
                   <li>Worked with Python to clean and transform parsed raw data into a standardized format used for downstream
@@ -93,12 +95,12 @@ export default function About() {
             </div>
           </div>
           <div className="pb-4 divide-y">
-            <h2 className="text-4xl pt-4 pb-4">
+            <h2 id="projects" className="text-4xl pt-4 pb-4">
               Projects
             </h2>
             <div className="pt-4">
               <div>
-                <h3 className="text-2xl">P2P Distributed Game</h3>
+                <h3 id="distributed-game" className="text-2xl">P2P Distributed Game</h3>
                 {/* <p className="pt-2"><span className="italic">Data Engineering Intern</span> &middot; Feb 2023 - Mar 2023</p> */}
                 <ul className="pt-2 list-disc list-inside">
                   <li>Designed and developed a peer-to-peer distributed maze game in Java using Java RMI and implemented mutual
@@ -106,7 +108,7 @@ export default function About() {
                 </ul>
               </div>
               <div className="pt-4">
-                <h3 className="text-2xl">Definitional Interpreter</h3>
+                <h3 id="definitional-interpreter" className="text-2xl">Definitional Interpreter</h3>
                 {/* <p className="pt-2"><span className="italic">Software Engineering Intern</span> &middot; Aug 2022 - Feb 2023</p> */}
                 <ul className="pt-2 list-disc list-inside">
                   <li>Developed a definitional interpreter and type checker for Scilla (an intermediate-level language smart contract
@@ -116,19 +118,19 @@ export default function About() {
             </div>
           </div>
           <div className="pb-4 divide-y">
-            <h2 className="text-4xl pt-4 pb-4">
+            <h2 id="education" className="text-4xl pt-4 pb-4">
               Education
             </h2>
             <div className="pt-4">
               <div>
-                <h3 className="text-2xl">National University of Singapore (NUS)</h3>
+                <h3 id="national-university-of-singapore" className="text-2xl">National University of Singapore (NUS)</h3>
                 <p className="pt-2"><span className="italic">Master of Computing (Highest Distinction)</span> &middot; Jan 2021 - Jan 2023</p>
                 <p className="pt-2 font-bold">Relevant Coursework</p>
                 <p className="pt-2">Data Structures and Algorithms, Computer Organisation, Operating Systems, Artificial Intelligence,
                   Software Engineering, Fundamentals of Logic, Programming Languages Implementation, Distributed Systems, Big Data Systems for Data Science</p>
               </div>
               <div className="pt-4">
-                <h3 className="text-2xl">University of Warwick</h3>
+                <h3 id="university-of-warwick" className="text-2xl">University of Warwick</h3>
                 <p className="pt-2"><span className="italic">Bachelor of Science in Management with Finance (First-Class Honours)</span> &middot; Aug 2022 - Feb 2023</p>
                 <p className="pt-2 font-bold">Relevant Coursework</p>
                 <p className="pt-2">Econometrics, Database Systems, Data Science, Investment Management, Statistics</p>
@@ -136,7 +138,7 @@ export default function About() {
             </div>
           </div>
           <div className="pb-4 divide-y">
-            <h2 className="text-4xl pt-4 pb-4">
+            <h2 id="skills" className="text-4xl pt-4 pb-4">
               Skills
             </h2>
           </div>
