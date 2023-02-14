@@ -27,18 +27,19 @@ export default function About() {
       <NavBar />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 flex">
         <div className="min-w-200 text-slate-900 dark:text-slate-200">
-          <nav className="relative">
-            <div className="sticky">
-              <TableOfContents />
-              <ul className="text-slate-900 dark:text-slate-200">
-                <li>About Me
-                  <ul className="text-slate-900 dark:text-slate-400">
-                    <li className="pl-4">Contact Details</li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </nav>
+          {/* <nav className="relative"> */}
+          {/*   <div className="sticky"> */}
+          {/*     <TableOfContents /> */}
+          {/*     <ul className="text-slate-900 dark:text-slate-200"> */}
+          {/*       <li>About Me */}
+          {/*         <ul className="text-slate-900 dark:text-slate-400"> */}
+          {/*           <li className="pl-4">Contact Details</li> */}
+          {/*         </ul> */}
+          {/*       </li> */}
+          {/*     </ul> */}
+          {/*   </div> */}
+          {/* </nav> */}
+          <TableOfContents />
         </div>
         <div className="max-w-3xl mx-auto text-slate-900 dark:text-slate-200">
           <div className="pb-4 divide-y">
