@@ -32,7 +32,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body className="dark:bg-gray-900/95">
+      <body className="font-jetbrains-mono dark:bg-gray-900/95">
         <Outlet />
         <ScrollRestoration />
         <Scripts />

@@ -2,31 +2,12 @@ import { NavBar } from "~/components/navbar";
 import { Waypoint } from 'react-waypoint';
 import TableOfContents from "~/components/tableOfContents";
 
-const PdfViewer = ({ pdfUrl }: { pdfUrl: string }) => {
-  const googleDocsViewerUrl = `https://docs.google.com/gview?url=${pdfUrl}&embedded=true`;
-
-  return (
-    <iframe
-      title="resume"
-      src={googleDocsViewerUrl}
-      width="100%"
-      height="100%"
-    />
-  );
-};
-
-const aboutMyself = "Hello World";
-
-const Sidebar = () => {
-  <div> </div>
-};
-
 export default function About() {
   return (
     <div>
       <NavBar />
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 flex">
-        <div className="min-w-200 text-slate-900 dark:text-slate-200">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 md:flex">
+        <div className="text-slate-900 dark:text-slate-200">
           {/* <nav className="relative"> */}
           {/*   <div className="sticky"> */}
           {/*     <TableOfContents /> */}
@@ -142,6 +123,13 @@ export default function About() {
             <h2 id="skills" className="text-4xl pt-4 pb-4">
               Skills
             </h2>
+            <div className="pt-4">
+              <ul className="pt-2 list-disc list-inside">
+                <li>Full-Stack Development</li>
+                <li><span className="font-bold">Databases:</span> MySQL &middot; PostgreSQL</li>
+                <li><span className="font-bold">Languages:</span> Python &middot; JavaScript/TypeScript &middot; Java &middot; Rust &middot; SQL &middot; HTML/CSS</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

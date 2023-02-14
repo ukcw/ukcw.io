@@ -515,12 +515,20 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.static{
+  position: static;
+}
+
 .relative{
   position: relative;
 }
 
 .sticky{
   position: sticky;
+}
+
+.top-10{
+  top: 2.5rem;
 }
 
 .mx-auto{
@@ -546,6 +554,18 @@ video {
 
 .max-w-3xl{
   max-width: 48rem;
+}
+
+.transform{
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.list-inside{
+  list-style-position: inside;
+}
+
+.list-disc{
+  list-style-type: disc;
 }
 
 .items-center{
@@ -574,19 +594,14 @@ video {
   white-space: nowrap;
 }
 
-.px-20{
-  padding-left: 5rem;
-  padding-right: 5rem;
-}
-
-.py-9{
-  padding-top: 2.25rem;
-  padding-bottom: 2.25rem;
-}
-
 .px-5{
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+
+.py-5{
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .py-2{
@@ -609,6 +624,10 @@ video {
 
 .pt-4{
   padding-top: 1rem;
+}
+
+.pt-2{
+  padding-top: 0.5rem;
 }
 
 .align-middle{
@@ -638,6 +657,22 @@ video {
   font-weight: 500;
 }
 
+.font-semibold{
+  font-weight: 600;
+}
+
+.font-thin{
+  font-weight: 100;
+}
+
+.font-bold{
+  font-weight: 700;
+}
+
+.italic{
+  font-style: italic;
+}
+
 .text-slate-900{
   --tw-text-opacity: 1;
   color: rgb(15 23 42 / var(--tw-text-opacity));
@@ -645,6 +680,23 @@ video {
 
 .underline-offset-8{
   text-underline-offset: 8px;
+}
+
+.underline-offset-auto{
+  text-underline-offset: auto;
+}
+
+h2, h3 {
+  scroll-margin-top: 16px;
+}
+
+/* Safari-only */
+
+@supports (-webkit-hyphens:none) {
+  h2, h3 {
+    padding-top: 16px;
+    margin-top: -16px;
+  }
 }
 
 .hover\:underline:hover{
@@ -689,6 +741,24 @@ video {
 }
 
 @media (min-width: 768px){
+  .md\:flex{
+    display: flex;
+  }
+
+  .md\:max-w-sm{
+    max-width: 24rem;
+  }
+
+  .md\:px-20{
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .md\:py-9{
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+  }
+
   .md\:px-8{
     padding-left: 2rem;
     padding-right: 2rem;
@@ -698,10 +768,5 @@ video {
 @media (min-width: 1024px){
   .lg\:flex{
     display: flex;
-  }
-
-  .lg\:py-12{
-    padding-top: 3rem;
-    padding-bottom: 3rem;
   }
 }
