@@ -7,6 +7,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import { NavBar } from "./components/navbar";
 
 import styles from "./styles/app.css";
 
@@ -32,7 +33,8 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body className="font-jetbrains-mono dark:bg-gray-900/95">
+      <body className="font-jetbrains-mono text-slate-900 dark:text-slate-200 dark:bg-gray-900/95">
+        <NavBar />
         <Outlet />
         <ScrollRestoration />
         <Scripts />
