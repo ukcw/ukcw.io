@@ -106,14 +106,14 @@ export default function About() {
               <h3 id="national-university-of-singapore" className="text-2xl">National University of Singapore (NUS)</h3>
               <p className="pt-2"><span className="italic">Master of Computing (Highest Distinction)</span> &middot; Jan 2021 - Jan 2023</p>
               <p className="pt-2 font-bold">Relevant Coursework</p>
-              <p className="pt-2">Data Structures and Algorithms, Computer Organisation, Operating Systems, Artificial Intelligence,
-                Software Engineering, Fundamentals of Logic, Programming Languages Implementation, Distributed Systems, Big Data Systems for Data Science</p>
+              <p className="pt-2">Data Structures and Algorithms &middot; Computer Organisation &middot; Operating Systems &middot; Artificial Intelligence,
+                Software Engineering &middot; Fundamentals of Logic &middot; Programming Languages Implementation &middot; Distributed Systems &middot; Big Data Systems for Data Science</p>
             </div>
             <div className="pt-4">
               <h3 id="university-of-warwick" className="text-2xl">University of Warwick</h3>
               <p className="pt-2"><span className="italic">Bachelor of Science in Management with Finance (First-Class Honours)</span> &middot; Aug 2022 - Feb 2023</p>
               <p className="pt-2 font-bold">Relevant Coursework</p>
-              <p className="pt-2">Econometrics, Database Systems, Data Science, Investment Management, Statistics</p>
+              <p className="pt-2">Econometrics &middot; Database Systems &middot; Data Science &middot; Investment Management &middot; Statistics</p>
             </div>
           </div>
         </div>
