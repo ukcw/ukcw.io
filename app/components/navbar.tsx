@@ -37,10 +37,14 @@ export function NavBar() {
               case "pdf": {
                 return (
                   <li className="px-5 py-2" key={item.title}>
-                    <Link to={item.route} reloadDocument
+                    {/* <Link to={item.route} reloadDocument */}
+                    {/*   className="block text-lg whitespace-nowrap font-medium hover:underline focus:underline focus:outline-none active dark:text-white underline-offset-8"> */}
+                    {/*   {item.title} */}
+                    {/* </Link> */}
+                    <a href="/resume.pdf" // hard-coded path for fix - Link component does not work
                       className="block text-lg whitespace-nowrap font-medium hover:underline focus:underline focus:outline-none active dark:text-white underline-offset-8">
                       {item.title}
-                    </Link>
+                    </a>
                   </li>
                 )
               }
