@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Rubik+Moonrocks&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Palanquin&family=Rubik+Moonrocks&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=JetBrains+Mono&family=Palanquin&family=Rubik+Moonrocks&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -9,3 +12,21 @@
     @apply;
   }
 }
+
+@layer utilities {
+  h2,
+  h3 {
+    @apply scroll-margin-top: 16px;
+  }
+}
+/* h2, h3 { */
+/*     scroll-margin-top: 16px; */
+/* } */
+/**/
+/* /* Safari-only */ */
+/* @supports (-webkit-hyphens:none) { */
+/*     h2, h3 { */
+/*         padding-top: 16px; */
+/*         margin-top: -16px; */
+/*     } */
+/* } */
