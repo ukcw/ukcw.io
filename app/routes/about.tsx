@@ -1,25 +1,9 @@
-import { NavBar } from "~/components/navbar";
-import { Waypoint } from 'react-waypoint';
 import TableOfContents from "~/components/tableOfContents";
 
 export default function About() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 md:flex">
-      <div className="text-slate-900 dark:text-slate-200">
-        {/* <nav className="relative"> */}
-        {/*   <div className="sticky"> */}
-        {/*     <TableOfContents /> */}
-        {/*     <ul className="text-slate-900 dark:text-slate-200"> */}
-        {/*       <li>About Me */}
-        {/*         <ul className="text-slate-900 dark:text-slate-400"> */}
-        {/*           <li className="pl-4">Contact Details</li> */}
-        {/*         </ul> */}
-        {/*       </li> */}
-        {/*     </ul> */}
-        {/*   </div> */}
-        {/* </nav> */}
-        <TableOfContents />
-      </div>
+      <TableOfContents />
       <div className="max-w-3xl mx-auto text-slate-900 dark:text-slate-200">
         <div className="pb-4 divide-y">
           <h2 id="about-me" className="text-4xl pb-4">
