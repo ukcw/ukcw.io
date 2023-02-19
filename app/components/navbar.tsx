@@ -2,7 +2,7 @@ import { Link } from "@remix-run/react";
 
 const navLinks = [
   // { title: "Projects", type: "component", route: "/projects" },
-  { title: "Resume", type: "pdf", route: "/resume" },
+  { title: "Resume", type: "pdf", route: "/resume.pdf" },
   { title: "About", type: "component", route: "/about" },
   { title: "Notes", type: "component", route: "/notes" },
 ];
@@ -41,10 +41,10 @@ export function NavBar() {
                     {/*   className="block text-lg whitespace-nowrap font-medium hover:underline focus:underline focus:outline-none active dark:text-white underline-offset-8"> */}
                     {/*   {item.title} */}
                     {/* </Link> */}
-                    <a href="/resume.pdf" // hard-coded path for fix - Link component does not work
+                    <Link reloadDocument to={item.route}// hard-coded path for fix - Link component does not work
                       className="block text-lg whitespace-nowrap font-medium hover:underline focus:underline focus:outline-none active dark:text-white underline-offset-8">
                       {item.title}
-                    </a>
+                    </Link>
                   </li>
                 )
               }
