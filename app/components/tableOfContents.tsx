@@ -34,7 +34,7 @@ const TableOfContents = () => {
   const { nestedHeadings } = useHeadingsData();
 
   return (
-    <div className="">
+    <div className="mx-auto max-w-3xl">
       <nav aria-label="Table of Contents" className="sticky top-10">
         <Headings headings={nestedHeadings} />
       </nav>
