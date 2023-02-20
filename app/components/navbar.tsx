@@ -9,7 +9,7 @@ const navLinks = [
 
 export function NavBar() {
   return (
-    <div className="px-5 py-5 md:px-20 md:py-9 md:flex">
+    <div className="px-5 py-5 mx-auto md:px-20 md:py-9 md:flex">
       <nav className="text-primary mx-auto md:max-w-8xl items-center justify-between">
         <div className="flex justify-center gap-4 align-middle">
           <Link
