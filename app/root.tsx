@@ -12,6 +12,7 @@ import { NavBar } from "./components/navbar";
 import styles from "./styles/app.css";
 
 export const links: LinksFunction = () => {
+  //icon generated from: https://favicon.io/favicon-generator/
   return [
     {
       rel: "stylesheet",
