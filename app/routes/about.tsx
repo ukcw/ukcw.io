@@ -2,7 +2,7 @@ import TableOfContents from "~/components/tableOfContents";
 
 export default function About() {
   return (
-    <div className="max-w-7xl mx-auto px-8 pb-20 mb-8 sm:px-6 lg:px-8 lg:flex" style={{ paddingBottom: "" }}>
+    <div className="max-w-7xl mx-auto px-8 pb-20 mb-8 sm:px-6 lg:px-8 lg:flex">
       <TableOfContents />
       <div className="max-w-3xl mx-auto mt-5 lg:mt-0 text-slate-900 dark:text-slate-200">
         <div className="pb-4 divide-y">
