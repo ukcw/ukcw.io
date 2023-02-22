@@ -8,6 +8,9 @@ module.exports = {
         'open-sans': ["Rubik Moonrocks", "cursive"],
         'palanquin': ["Palanquin", "sans-serif"],
         'fira-sans': ["Fira Sans", "sans-serif"],
+        'dm-sans': ["DM Sans", "sans-serif"],
+        'libre-baskerville': ["Libre Baskerville", "serif"],
+        'Poppins': ["Poppins", "sans-serif"],
       }
     },
   },

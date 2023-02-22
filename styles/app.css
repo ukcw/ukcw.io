@@ -1,7 +1,10 @@
 /* @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Rubik+Moonrocks&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Palanquin&family=Rubik+Moonrocks&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=JetBrains+Mono&family=Palanquin&family=Rubik+Moonrocks&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=JetBrains+Mono&family=Palanquin&family=Rubik+Moonrocks&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Fira+Sans&family=JetBrains+Mono&family=Palanquin&family=Rubik+Moonrocks&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Fira+Sans&family=JetBrains+Mono&family=Libre+Baskerville&family=Palanquin&family=Poppins&family=Rubik+Moonrocks&display=swap');
+/* look here for font inspo: https://www.typewolf.com/google-fonts */
 
 @tailwind base;
 @tailwind components;
