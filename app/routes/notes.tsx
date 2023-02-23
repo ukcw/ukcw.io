@@ -1,7 +1,9 @@
 export default function Notes() {
   return (
-    <div className="">
-      <h1 className="">To be added.</h1>
+    <div className="max-w-7xl px-5">
+      <div className="relative max-w-3xl min-h-screen mx-auto">
+        <h1 className="text-2xl">To be added.</h1>
+      </div>
     </div>
   )
 }
