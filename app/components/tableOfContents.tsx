@@ -15,7 +15,7 @@ const Headings = ({ headings, activeId }: { headings: any[], activeId: string })
         {heading.items.length > 0 && (
           <ul>
             {heading.items.map((child: any) => (
-              <li key={child.id} /*className={`pl-4 font-thin ${child.id === activeId ? "bg-pink-500" : ""}`}*/>
+              <li key={child.id} className={`pl-4 font-thin ${child.id === activeId ? "" : ""}`}>
                 <a href={`#${child.id}`} onClick={(e) => {
                   e.preventDefault();
                   document.querySelector(`#${child.id}`)!.scrollIntoView({
