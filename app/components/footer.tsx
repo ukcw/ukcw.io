@@ -1,4 +1,3 @@
-import { Link } from "@remix-run/react";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
@@ -17,6 +16,10 @@ const Footer = () => {
             <a href="https://github.com/ukcw"><FaGithub className="h-6 w-6" /></a>
             <a href="https://twitter.com/ukcw_"><FaTwitter className="h-6 w-6" /></a>
             <a href="https://www.linkedin.com/in/ulysses-kee/"><FaLinkedin className="h-6 w-6" /></a>
+          </div>
+          <div className="lg:flex lg:gap-2 mt-24 text-lg lg:mt-44">
+            <span>All rights reserved</span>
+            <span className="block lg:inline">© Ulysses Kee 2023</span>
           </div>
         </div>
       </div>

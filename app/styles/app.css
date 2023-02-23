@@ -557,6 +557,10 @@ video {
   z-index: 50;
 }
 
+.col-span-full{
+  grid-column: 1 / -1;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -592,6 +596,10 @@ video {
 
 .mt-5{
   margin-top: 1.25rem;
+}
+
+.mt-24{
+  margin-top: 6rem;
 }
 
 .block{
@@ -1058,6 +1066,14 @@ video {
     margin-top: 0px;
   }
 
+  .lg\:mt-44{
+    margin-top: 11rem;
+  }
+
+  .lg\:inline{
+    display: inline;
+  }
+
   .lg\:flex{
     display: flex;
   }
@@ -1084,6 +1100,10 @@ video {
 
   .lg\:gap-4{
     gap: 1rem;
+  }
+
+  .lg\:gap-2{
+    gap: 0.5rem;
   }
 
   .lg\:py-9{
