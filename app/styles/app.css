@@ -749,6 +749,11 @@ video {
   background-color: transparent;
 }
 
+.bg-pink-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(236 72 153 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-100{
   --tw-bg-opacity: 1;
 }
@@ -920,6 +925,10 @@ video {
 .text-black{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.decoration-pink-500{
+  text-decoration-color: #ec4899;
 }
 
 .underline-offset-8{
