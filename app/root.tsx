@@ -1,4 +1,4 @@
-import type { LinksFunction, MetaFunction } from "@remix-run/cloudflare";
+import type { LinksFunction, MetaFunction } from '@remix-run/cloudflare'
 import {
   Links,
   LiveReload,
@@ -6,47 +6,47 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
-} from "@remix-run/react";
-import Footer from "./components/footer";
-import { NavBar } from "./components/navbar";
+} from '@remix-run/react'
+import Footer from './components/footer'
+import { NavBar } from './components/navbar'
 
-import styles from "./styles/app.css";
+import styles from './styles/app.css'
 
 export const links: LinksFunction = () => {
   //icon generated from: https://favicon.io/favicon-generator/
   return [
     {
-      rel: "stylesheet",
+      rel: 'stylesheet',
       href: styles,
     },
     {
-      rel: "apple-touch-icon",
-      href: "/apple-touch-icon.png",
-      sizes: "180x180",
+      rel: 'apple-touch-icon',
+      href: '/apple-touch-icon.png',
+      sizes: '180x180',
     },
     {
-      rel: "icon",
-      href: "/favicon-32x32.png",
-      sizes: "32x32",
-      type: "image/png",
+      rel: 'icon',
+      href: '/favicon-32x32.png',
+      sizes: '32x32',
+      type: 'image/png',
     },
     {
-      rel: "icon",
-      href: "/favicon-16x16.png",
-      sizes: "16x16",
+      rel: 'icon',
+      href: '/favicon-16x16.png',
+      sizes: '16x16',
     },
     {
-      rel: "manifest",
-      href: "/site.webmanifest",
+      rel: 'manifest',
+      href: '/site.webmanifest',
     },
-  ];
-};
+  ]
+}
 
 export const meta: MetaFunction = () => ({
-  charset: "utf-8",
-  title: "Ulysses Kee",
-  viewport: "width=device-width,initial-scale=1",
-});
+  charset: 'utf-8',
+  title: 'Ulysses Kee',
+  viewport: 'width=device-width,initial-scale=1',
+})
 
 export default function App() {
   return (
@@ -64,5 +64,5 @@ export default function App() {
         <Footer />
       </body>
     </html>
-  );
+  )
 }

@@ -1,10 +1,10 @@
-import TableOfContents from "~/components/tableOfContents";
+import TableOfContents from '~/components/tableOfContents'
 
 export default function About() {
   return (
-    <div className="max-w-7xl mx-auto px-8 pb-20 mb-8 sm:px-6 lg:px-8 lg:flex">
+    <div className="max-w-7xl mx-auto px-5 sm:px-6 md:px-8 md:flex">
       <TableOfContents />
-      <div className="max-w-3xl mx-auto mt-5 lg:mt-0 text-slate-900 dark:text-slate-200">
+      <div className="max-w-3xl mt-5 lg:mt-0 mx-auto text-slate-900 dark:text-slate-200">
         <div className="pb-4 divide-y">
           <h2 id="about-me" className="text-4xl pb-4">
             About Me
@@ -45,7 +45,7 @@ export default function About() {
                 Singapore Blockchain Innovation Programme (NUS-SBIP)
               </h3>
               <p className="pt-2">
-                <span className="italic">Software Engineering Intern</span>{" "}
+                <span className="italic">Software Engineering Intern</span>{' '}
                 &middot; Aug 2022 - Feb 2023
               </p>
               <ul className="pt-2 list-disc list-inside">
@@ -59,8 +59,9 @@ export default function About() {
                   structure of Solidity smart contracts in React.
                 </li>
                 <li>
-                  Working on the parsing of semantic tests from the official <a href="https://github.com/ethereum/solidity" className="hover:underline">Solidity</a> repository into internal Rust data structures using
-                  the <a href="https://github.com/pest-parser/pest" className="hover:underline">Pest</a> parser.
+                  Working on the parsing of semantic tests from the official
+                  Solidity repository into internal Rust data structures using
+                  the pest parser.
                 </li>
               </ul>
             </div>
@@ -69,12 +70,12 @@ export default function About() {
                 Cloudflare
               </h3>
               <p className="pt-2">
-                <span className="italic">Software Development Intern</span>{" "}
+                <span className="italic">Software Development Intern</span>{' '}
                 &middot; Dec 2021 - May 2022
               </p>
               <ul className="pt-2 list-disc list-inside">
                 <li>
-                  Developed <a href="https://flaretools.cloudflareuniversity.com/" className="hover:underline">FlareTools</a>, a web-based application using React and
+                  Developed FlareTools, a web-based application using React and
                   Cloudflare Workers, to help internal teams and partners gain
                   better visibility over product configurations, and copy
                   configuration records and settings easily.
@@ -86,10 +87,14 @@ export default function About() {
                 </li>
                 <li>
                   Presented my project in a global company-wide meeting and
-                  published a <a
-                    className="hover:underline"
+                  published a{' '}
+                  <a
+                    className="underline-offset-auto"
                     href="https://blog.cloudflare.com/internship-experience-software-development-intern/"
-                  >blog</a> about it.
+                  >
+                    blog
+                  </a>{' '}
+                  about it.
                 </li>
               </ul>
             </div>
@@ -136,10 +141,7 @@ export default function About() {
               {/* <p className="pt-2"><span className="italic">Software Engineering Intern</span> &middot; Aug 2022 - Feb 2023</p> */}
               <ul className="pt-2 list-disc list-inside">
                 <li>
-                  Developed a <a
-                    className="hover:underline"
-                    href="https://drive.google.com/file/d/1kGop71SiISbf-41Moq8huiaPMh9Bsxw4/view?usp=sharing"
-                  >definitional interpreter</a> and type checker for
+                  Developed a definitional interpreter and type checker for
                   Scilla (an intermediate-level language smart contract language
                   developed for the Zilliqa blockchain) in JavaScript.
                 </li>
@@ -159,7 +161,7 @@ export default function About() {
               <p className="pt-2">
                 <span className="italic">
                   Master of Computing (Highest Distinction)
-                </span>{" "}
+                </span>{' '}
                 &middot; Jan 2021 - Jan 2023
               </p>
               <p className="pt-2 font-bold">Relevant Coursework</p>
@@ -179,7 +181,7 @@ export default function About() {
                 <span className="italic">
                   Bachelor of Science in Management with Finance (First-Class
                   Honours)
-                </span>{" "}
+                </span>{' '}
                 &middot; Aug 2022 - Feb 2023
               </p>
               <p className="pt-2 font-bold">Relevant Coursework</p>
@@ -211,5 +213,5 @@ export default function About() {
         </div>
       </div>
     </div>
-  );
+  )
 }

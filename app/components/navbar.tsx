@@ -1,6 +1,7 @@
 import { Link } from "@remix-run/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import { useState } from "react";
+import { FaRegMoon } from "react-icons/fa";
 
 const navLinks = [
   // { title: "Projects", type: "component", route: "/projects" },
@@ -59,6 +60,11 @@ export function NavBar() {
             }
           })}
         </ul>
+        <button className="px-5 py-2 hidden lg:block">
+          <div className="">
+            <FaRegMoon className="h-4 w-4 " />
+          </div>
+        </button>
         <div className="lg:hidden">
           {!isOpenBurger && <Bars3Icon className="h-8 w-8" onClick={toggleBurger} />}
           {isOpenBurger && <XMarkIcon className="h-8 w-8" onClick={toggleBurger} />}
