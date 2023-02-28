@@ -1,0 +1,9 @@
+{
+  "lspconfig": {
+    "eslint": {
+      "format": {
+        "enable": true
+      }
+    }
+  }
+}
