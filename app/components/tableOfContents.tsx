@@ -13,7 +13,7 @@ const renderHeading = (
           key={heading.id}
           className={`px-5 first:pt-1 last:pb-1 ${
             heading.id === activeId
-              ? 'dark:bg-slate-200 dark:text-slate-900'
+              ? 'dark:bg-white dark:text-black text-white bg-black'
               : ''
           }`}
         >
@@ -36,7 +36,9 @@ const renderHeading = (
         <li
           key={heading.id}
           className={`px-5 pl-9 font-thin ${
-            heading.id === activeId ? 'bg-slate-200 dark:text-slate-900' : ''
+            heading.id === activeId
+              ? 'dark:bg-white dark:text-black text-white bg-black'
+              : ''
           }`}
         >
           <a
@@ -129,7 +131,6 @@ const TableOfContents = () => {
   useIntersectionObserver(setActiveId)
 
   const flattenHeadings = (headings: any[]) => {
-    console.log('head', headings)
     return headings.reduce((currentValue, heading) => {
       const arr = []
       arr.push({ level: 0, id: heading.id, title: heading.title })
@@ -143,7 +144,6 @@ const TableOfContents = () => {
       return currentValue.concat(arr)
     }, [])
   }
-  console.log(flattenHeadings(nestedHeadings))
   return (
     <div className="mx-auto max-w-3xl lg:mr-10">
       <nav aria-label="Table of Contents" className="sticky top-10 ">

@@ -12,13 +12,17 @@
 
 @layer components {
   .text-primary {
-    @apply text-slate-900 dark:text-slate-200
+    @apply text-black dark:text-slate-200;
   }
   .text-secondary {
-    @apply text-gray-500 dark:text-gray-400
+    @apply text-gray-500 dark:text-gray-400;
+  }
+  .text-current-focus {
+    @apply text-black dark:text-white underline;
   }
 }
 
+/* https://v1.tailwindcss.com/docs/adding-new-utilities */
 /* @layer utilities { */
 /*   h2, */
 /*   h3 { */

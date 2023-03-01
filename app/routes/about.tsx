@@ -2,7 +2,7 @@ import TableOfContents from '~/components/tableOfContents'
 
 export default function About() {
   return (
-    <div className="max-w-7xl mx-auto px-5 sm:px-6 md:px-8 md:flex">
+    <div className="max-w-7xl mx-auto px-5 sm:px-6 md:px-8 lg:flex">
       <TableOfContents />
       <div className="max-w-3xl mt-5 lg:mt-0 mx-auto text-primary">
         <div className="pb-4 divide-y">
