@@ -20,7 +20,7 @@ const Footer = () => {
               <FaLinkedin className="h-6 w-6 text-primary" />
             </a>
           </div>
-          <div className="lg:flex lg:gap-2 mt-24 text-lg lg:mt-44">
+          <div className="lg:flex lg:gap-2 mt-24 text-lg lg:mt-44 text-secondary">
             <span>All rights reserved</span>
             <span className="block lg:inline">© Ulysses Kee 2023</span>
           </div>
