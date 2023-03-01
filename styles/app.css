@@ -11,8 +11,11 @@
 @tailwind utilities;
 
 @layer components {
-  .text-dynamic {
-    @apply;
+  .text-primary {
+    @apply text-slate-900 dark:text-slate-200
+  }
+  .text-secondary {
+    @apply text-gray-500 dark:text-gray-400
   }
 }
 

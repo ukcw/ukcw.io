@@ -4,7 +4,7 @@ export default function About() {
   return (
     <div className="max-w-7xl mx-auto px-5 sm:px-6 md:px-8 md:flex">
       <TableOfContents />
-      <div className="max-w-3xl mt-5 lg:mt-0 mx-auto text-slate-900 dark:text-slate-200">
+      <div className="max-w-3xl mt-5 lg:mt-0 mx-auto text-primary">
         <div className="pb-4 divide-y">
           <h2 id="about-me" className="text-4xl pb-4">
             About Me
