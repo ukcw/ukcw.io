@@ -31,7 +31,6 @@ const renderHeading = (
           </a>
         </li>
       )
-      break
     case 1:
       return (
         <li
@@ -53,7 +52,6 @@ const renderHeading = (
           </a>
         </li>
       )
-      break
   }
 }
 
@@ -64,7 +62,7 @@ const Headings = ({
   headings: any[]
   activeId: string
 }) => (
-  <ul className="border-slate-900 dark:border-slate-200 border rounded">
+  <ul className="border-slate-900 text-primary dark:border-slate-200 border rounded">
     {headings.map((heading) => renderHeading(heading, activeId))}
   </ul>
 )
