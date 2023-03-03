@@ -28,6 +28,12 @@ export function NavBar() {
     setIsOpenBurger((prev) => !prev)
   }
 
+  const closeBurger = () => {
+    if (isOpenBurger) {
+      setIsOpenBurger(false)
+    }
+  }
+
   return (
     <div
       className={`px-5 py-5 lg:mx-auto lg:py-9 max-w-7xl flex justify-between ${
@@ -40,20 +46,13 @@ export function NavBar() {
           <Link
             to="/"
             className="text-primary block whitespace-nowrap text-2xl font-medium hover:underline underline-offset-8"
+            onClick={closeBurger}
           >
             <h1>Ulysses Kee</h1>
           </Link>
         </div>
         <ul className="hidden lg:flex lg:flex-row">
           {navLinks.map((item) => {
-            {
-              console.log(
-                'pathname, item.route',
-                pathname,
-                item.route,
-                pathname === item.route
-              )
-            }
             switch (item.type) {
               case 'component': {
                 return (
