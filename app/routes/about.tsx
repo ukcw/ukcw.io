@@ -1,3 +1,4 @@
+import { Link } from '@remix-run/react'
 import TableOfContents from '~/components/tableOfContents'
 
 export default function About() {
@@ -164,6 +165,7 @@ export default function About() {
                 </span>{' '}
                 &middot; Jan 2021 - Jan 2023
               </p>
+              <p className="pt-2 font-bold"><Link to="/CP5105_Ulysses.pdf" reloadDocument >Thesis: Algorithmic Trading with Case Based Reasoning and Multi-Agent Systems</Link></p>
               <p className="pt-2 font-bold">Relevant Coursework</p>
               <p className="pt-2">
                 Data Structures and Algorithms &middot; Computer Organisation
