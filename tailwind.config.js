@@ -12,6 +12,46 @@ module.exports = {
         'libre-baskerville': ['Libre Baskerville', 'serif'],
         Poppins: ['Poppins', 'sans-serif'],
       },
+      keyframes: {
+        'pulse-color-light': {
+          '0%': {
+            'background-color': '#3b82f6',
+          },
+          '25%': {
+            'background-color': '#93c5fd',
+          },
+          '50%': {
+            'background-color': '#dbeafe',
+          },
+          '75%': {
+            'background-color': '#93c5fd',
+          },
+          '100%': {
+            'background-color': '#3b82f6',
+          },
+        },
+        'pulse-color-dark': {
+          '0%': {
+            'background-color': '#ef4444',
+          },
+          '25%': {
+            'background-color': '#fca5a5',
+          },
+          '50%': {
+            'background-color': '#fee2e2',
+          },
+          '75%': {
+            'background-color': '#fca5a5',
+          },
+          '100%': {
+            'background-color': '#ef4444',
+          },
+        },
+      },
+      animation: {
+        'pulse-light': 'pulse-color-light 2.5s linear infinite',
+        'pulse-dark': 'pulse-color-dark 2.5s linear infinite',
+      },
     },
   },
   darkMode: 'class',
