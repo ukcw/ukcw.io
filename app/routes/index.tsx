@@ -23,7 +23,7 @@ export default function Index() {
           </div>
           <div
             id="terminal"
-            className="w-1/2 ml-20 rounded-lg shadow-2xl divide-y divide-solid dark:bg-gray-800 hidden lg:block"
+            className="w-1/2 ml-20 rounded-lg shadow-2xl divide-y divide-solid dark:bg-grey-800 hidden lg:block"
           >
             <div
               id="terminal-head"
