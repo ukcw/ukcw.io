@@ -9,6 +9,7 @@ import {
 import { HiOutlineArrowRight } from 'react-icons/hi2'
 import { Link } from '@remix-run/react'
 import { useEffect, useState } from 'react'
+import Typewriter from 'typewriter-effect'
 
 export default function Index() {
   return (
@@ -39,8 +40,26 @@ export default function Index() {
                 className="text-primary py-6 px-4"
               >
                 <div className="">
-                  <p>Welcome to my website!</p>
-                  <p>Let's get started...</p>
+                  <Typewriter
+                    onInit={(typewriter) => {
+                      typewriter
+                        .typeString('Welcome to my site!')
+                        .pauseFor(100)
+                        .typeString('<br />')
+                        .pauseFor(100)
+                        .typeString("Let's get started...")
+                        .callFunction((state) => {
+                          // turn off animation
+                          state.elements.cursor.style.animation = 'none'
+                          // hide cursor
+                          state.elements.cursor.style.display = 'none'
+                        })
+                        .start()
+                    }}
+                    options={{
+                      delay: 60,
+                    }}
+                  />
                 </div>
                 <div className="flex my-6 justify-between">
                   <p className="italic">Select a category</p>

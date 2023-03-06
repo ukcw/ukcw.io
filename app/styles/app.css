@@ -1140,6 +1140,11 @@ video {
 
 /* } */
 
+.after\:content-\[\'\|\'\]::after{
+  --tw-content: '|';
+  content: var(--tw-content);
+}
+
 .first\:pt-1:first-child{
   padding-top: 0.25rem;
 }
