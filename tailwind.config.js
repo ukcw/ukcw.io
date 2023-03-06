@@ -3,6 +3,20 @@ module.exports = {
   content: ['./app/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      colors: {
+        grey: {
+          50: '#fafafa ',
+          100: '#f4f4f5 ',
+          200: '#e4e4e7 ',
+          300: '#d4d4d8 ',
+          400: '#a1a1aa ',
+          500: '#71717a ',
+          600: '#52525b ',
+          700: '#3f3f46 ',
+          800: '#27272a ',
+          900: '#18181b ',
+        },
+      },
       fontFamily: {
         'jetbrains-mono': ['JetBrains Mono', 'monospace'],
         'open-sans': ['Rubik Moonrocks', 'cursive'],
@@ -15,7 +29,7 @@ module.exports = {
       keyframes: {
         'pulse-color-light': {
           '0%': {
-            'background-color': '#3b82f6',
+            'background-color': '#60a5fa',
           },
           '25%': {
             'background-color': '#93c5fd',
@@ -27,12 +41,12 @@ module.exports = {
             'background-color': '#93c5fd',
           },
           '100%': {
-            'background-color': '#3b82f6',
+            'background-color': '#60a5fa',
           },
         },
         'pulse-color-dark': {
           '0%': {
-            'background-color': '#ef4444',
+            'background-color': '#f87171',
           },
           '25%': {
             'background-color': '#fca5a5',
@@ -44,7 +58,7 @@ module.exports = {
             'background-color': '#fca5a5',
           },
           '100%': {
-            'background-color': '#ef4444',
+            'background-color': '#f87171',
           },
         },
       },
