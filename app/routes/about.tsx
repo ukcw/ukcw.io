@@ -18,7 +18,7 @@ export default function About() {
             National University of Singapore (NUS) with a Master of Computing
             (Highest Distinction). I'm interested in distributed systems, logic,
             and programming languages amongst other areas of computer science.
-            I'm an incoming Data Engineering intern at Binance.
+            I'm currently a Data Engineering intern at Binance.
           </p>
         </div>
         <div className="pb-4 divide-y">
