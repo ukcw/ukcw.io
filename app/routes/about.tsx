@@ -32,7 +32,7 @@ export default function About() {
               </h3>
               <p className="pt-2">
                 <span className="italic">Data Engineering Intern</span> &middot;
-                Feb 2023 - Mar 2023
+                Feb 2023 - May 2023
               </p>
               <ul className="pt-2 list-disc list-inside">
                 <li>Details to be added</li>
