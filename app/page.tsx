@@ -22,12 +22,12 @@ export default function IndexPage() {
           built with Radix UI and Tailwind CSS.
         </h1> */}
         <h1 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl">
-          Hello, I'm Ulysses
+          Hello, I&aposm Ulysses
         </h1>
         <p className="max-w-[700px] text-lg text-muted-foreground">
-          You've found my home on the internet.
+          You&aposve found my home on the internet.
           <br className="hidden sm:inline" />
-          I'm a software engineer from Singapore and currently working at
+          I&aposm a software engineer from Singapore and currently working at
           Binance.
         </p>
       </div>
@@ -61,7 +61,7 @@ export default function IndexPage() {
               variant: "ghost",
             })}
           >
-            <p className="h-5 w-5 fill-current text-muted-foreground font-extrabold tracking-tighter ">
+            <p className="h-5 w-5 fill-current font-extrabold tracking-tighter text-muted-foreground ">
               CV
             </p>
             <span className="sr-only">CV</span>
