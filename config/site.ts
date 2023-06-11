@@ -19,16 +19,26 @@ export const siteConfig = {
   projects: [
     {
       name: "ukcw.io",
-      language: "TypeScript",
-      // stars: 0,
+      description: "My personal website and digital garden.",
+      repository: "https://github.com/ukcw/ukcw.io",
     },
     {
-      name: "flaretools",
-      language: "JavaScript",
+      name: "Master's Thesis: Algorithmic Trading with Case Based Reasoning and Multi-Agent Systems",
+      description:
+        "Forecasting Bitcoin price movements using an innovative Case Based Reasoning system and LightGBM.",
+      repository: "https://ukcw.io/CP5105_Ulysses.pdf",
     },
     {
-      name: "scilla_parse",
-      language: "JavaScript",
+      name: "FlareTools",
+      description:
+        "An interactive website used to analyze configuration settings across different Cloudflare hosted websites.",
+      repository: "https://github.com/ukcw/flaretools",
+    },
+    {
+      name: "Definitional Interpreter for Scilla",
+      description:
+        "Built an evaluator for the Scilla language that runs in the browser.",
+      repository: "https://github.com/tramhnt99/scilla_parse",
     },
   ],
 }
