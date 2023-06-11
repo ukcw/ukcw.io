@@ -1,22 +1,22 @@
-# Welcome to Remix!
+# next-template
 
-- [Remix Docs](https://remix.run/docs)
+A Next.js 13 template for building apps with Radix UI and Tailwind CSS.
 
-## Development
+## Usage
 
-You will be utilizing Wrangler for local development to emulate the Cloudflare runtime. This is already wired up in your package.json as the `dev` script:
-
-```sh
-# start the remix dev server and wrangler
-npm run dev
+```bash
+npx create-next-app -e https://github.com/shadcn/next-template
 ```
 
-Open up [http://127.0.0.1:8788](http://127.0.0.1:8788) and you should be ready to go!
+## Features
 
-## Deployment
+- Next.js 13 App Directory
+- Radix UI Primitives
+- Tailwind CSS
+- Icons from [Lucide](https://lucide.dev)
+- Dark mode with `next-themes`
+- Tailwind CSS class sorting, merging and linting.
 
-Cloudflare Pages are currently only deployable through their Git provider integrations.
+## License
 
-If you don't already have an account, then [create a Cloudflare account here](https://dash.cloudflare.com/sign-up/pages) and after verifying your email address with Cloudflare, go to your dashboard and follow the [Cloudflare Pages deployment guide](https://developers.cloudflare.com/pages/framework-guides/deploy-anything).
-
-Configure the "Build command" should be set to `npm run build`, and the "Build output directory" should be set to `public`.
+Licensed under the [MIT license](https://github.com/shadcn/ui/blob/main/LICENSE.md).
