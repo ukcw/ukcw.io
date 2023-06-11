@@ -3,7 +3,6 @@ import Link from "next/link"
 import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
 import { buttonVariants } from "@/components/ui/button"
-import { GithubCard } from "@/components/github-card"
 import { Icons } from "@/components/icons"
 
 function getRepositoryName(repository: string) {
@@ -84,13 +83,14 @@ export default function IndexPage() {
           Projects
         </h2>
         {siteConfig.projects?.length ? (
-          <nav className="flex flex-col  gap-6">
+          <nav className="flex flex-col gap-6">
             {siteConfig.projects?.map(
               (item, index) =>
                 item.repository && (
                   <Link
                     key={index}
                     href={item.repository}
+                    className="flex flex-col space-y-1.5 !no-underline"
                     // className={cn(
                     //   "flex items-center text-sm font-medium text-muted-foreground",
                     //   item.disabled && "cursor-not-allowed opacity-80"
@@ -99,7 +99,6 @@ export default function IndexPage() {
                     <span className="font-bold underline underline-offset-4">
                       {getRepositoryName(item.repository)}
                     </span>
-                    <br className="hidden sm:inline" />
                     <span className="text-muted-foreground">
                       {item.description}
                     </span>
