@@ -19,23 +19,28 @@ import {
 } from "@/components/ui/dropdown-menu"
 import { Separator } from "@/components/ui/separator"
 
-export function DemoGithub() {
+interface GithubCardProps {
+  title: string
+  description: string
+}
+
+export function GithubCard({ title, description }: GithubCardProps) {
   return (
     <Card>
       <CardHeader className="grid grid-cols-[1fr_110px] items-start gap-4 space-y-0">
         <div className="space-y-1">
-          <CardTitle>shadcn/ui</CardTitle>
+          <CardTitle>FlareTools</CardTitle>
           <CardDescription>
-            Beautifully designed components built with Radix UI and Tailwind
-            CSS.
+            An interactive website used to analyze configuration settings across
+            different Cloudflare hosted websites.
           </CardDescription>
         </div>
-        <div className="flex items-center space-x-1 rounded-md bg-secondary text-secondary-foreground">
+        <div className="flex items-center space-x-1 rounded-md bg-secondary text-secondary-foreground mx-auto">
           <Button variant="secondary" className="px-3">
             <Star className="mr-2 h-4 w-4" />
             Star
           </Button>
-          <Separator orientation="vertical" className="h-[20px]" />
+          {/* <Separator orientation="vertical" className="h-[20px]" />
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="secondary" className="px-2">
@@ -60,7 +65,7 @@ export function DemoGithub() {
                 <Plus className="mr-2 h-4 w-4" /> Create List
               </DropdownMenuItem>
             </DropdownMenuContent>
-          </DropdownMenu>
+          </DropdownMenu> */}
         </div>
       </CardHeader>
       <CardContent>
