@@ -22,13 +22,11 @@ export default function IndexPage() {
           built with Radix UI and Tailwind CSS.
         </h1> */}
         <h1 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl">
-          Hello, I&aposm Ulysses
+          Hello, I&apos;m Ulysses
         </h1>
         <p className="max-w-[700px] text-lg text-muted-foreground">
-          You&aposve found my home on the internet.
-          <br className="hidden sm:inline" />
-          I&aposm a software engineer from Singapore and currently working at
-          Binance.
+          You&apos;ve found my home on the internet. I&apos;m a software
+          engineer from Singapore and currently working at Binance.
         </p>
       </div>
       <div className="flex gap-4">
@@ -65,6 +63,19 @@ export default function IndexPage() {
               CV
             </p>
             <span className="sr-only">CV</span>
+          </div>
+        </Link>
+        <Link href={siteConfig.links.resume} target="_blank" rel="noreferrer">
+          <div
+            className={buttonVariants({
+              size: "sm",
+              variant: "ghost",
+            })}
+          >
+            <p className="h-5 fill-current font-extrabold tracking-tighter text-muted-foreground ">
+              Resume
+            </p>
+            <span className="sr-only">Resume</span>
           </div>
         </Link>
       </div>
