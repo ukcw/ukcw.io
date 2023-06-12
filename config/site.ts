@@ -21,7 +21,7 @@ export const siteConfig = {
     {
       title: "Octoplorer",
       description: "A natural language query tool for the Ethereum blockchain.",
-      repository: "https://github.com/ukcw/ukcw.io",
+      repository: "https://github.com/lamtrinh259/ETHGlobal_Tokyo_hackathon",
       useTitle: true,
     },
     {
