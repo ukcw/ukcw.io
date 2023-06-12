@@ -5,11 +5,20 @@ import { cn } from "@/lib/utils"
 import { buttonVariants } from "@/components/ui/button"
 import { Icons } from "@/components/icons"
 
-function getRepositoryName(repository: string) {
-  if (repository.endsWith("/CP5105_Ulysses.pdf")) {
+interface Project {
+  title: string
+  description: string
+  repository: string
+  useTitle: boolean
+}
+
+function getRepositoryName(project: Project) {
+  if (project.repository.endsWith("/CP5105_Ulysses.pdf")) {
     return "CP5105"
+  } else if (project.useTitle) {
+    return project.title
   }
-  return repository.split("/").slice(-1)
+  return project.repository.split("/").slice(-1)
 }
 
 export default function IndexPage() {
@@ -97,7 +106,7 @@ export default function IndexPage() {
                     // )}
                   >
                     <span className="font-bold underline underline-offset-4">
-                      {getRepositoryName(item.repository)}
+                      {getRepositoryName(item)}
                     </span>
                     <span className="text-muted-foreground">
                       {item.description}

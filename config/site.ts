@@ -19,28 +19,38 @@ export const siteConfig = {
   },
   projects: [
     {
+      title: "Octoplorer",
+      description: "A natural language query tool for the Ethereum blockchain.",
+      repository: "https://github.com/ukcw/ukcw.io",
+      useTitle: true,
+    },
+    {
       title: "ukcw.io",
       description: "My personal website and digital garden.",
       repository: "https://github.com/ukcw/ukcw.io",
+      useTitle: false,
     },
     {
       title:
         "Master's Thesis: Algorithmic Trading with Case Based Reasoning and Multi-Agent Systems",
       description:
-        "Forecasting Bitcoin price movements using an innovative Case Based Reasoning system and LightGBM.",
+        "Forecasting Bitcoin price movements using a Case Based Reasoning system and LightGBM.",
       repository: "/CP5105_Ulysses.pdf",
+      useTitle: false,
     },
     {
       title: "FlareTools",
       description:
         "An interactive website used to analyze configuration settings across different Cloudflare hosted websites.",
       repository: "https://github.com/ukcw/flaretools",
+      useTitle: false,
     },
     {
       title: "Definitional Interpreter for Scilla",
       description:
         "Built an evaluator for the Scilla language that runs in the browser.",
       repository: "https://github.com/tramhnt99/scilla_parse",
+      useTitle: false,
     },
   ],
 }
