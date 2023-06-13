@@ -8,7 +8,7 @@ export function Footer() {
       <div className="relative mx-10vw">
         <div className="relative mx-auto max-w-3xl lg:max-w-7xl">
           <div className="font-medium text-3xl">Ulysses Kee</div>
-          <p className="max-w-md mt-6 text-2xl">
+          <p className="max-w-md mt-6 text-2xl text-muted-foreground">
             Software engineer interested in making the world a better place
           </p>
           <div className="mt-6 flex items-center gap-4">
