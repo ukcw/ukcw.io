@@ -4,27 +4,27 @@ import { Icons } from "@/components/icons"
 
 export function Footer() {
   return (
-    <footer className="mt-20 px-10 pt-20 pb-16 border-t border-gray-200">
-      <div className="relative mx-10vw">
-        <div className="relative mx-auto max-w-3xl lg:max-w-7xl">
-          <div className="font-medium text-3xl">Ulysses Kee</div>
-          <p className="max-w-md mt-6 text-2xl text-muted-foreground">
-            Software engineer interested in making the world a better place
-          </p>
-          <div className="mt-6 flex items-center gap-4">
+    <footer className="border-t border-gray-200 p-5 md:px-10">
+      <div className="mx-10vw relative">
+        <div className="flex justify-between">
+          <div className="text-base">
+            {/* <span>All rights reserved</span> */}
+            <span className="">© Ulysses Kee 2023</span>
+          </div>
+          {/* <div className="text-base">Ulysses Kee</div> */}
+          {/* <p className="mt-6 max-w-md text-2xl text-muted-foreground"> */}
+          {/*   Software engineer interested in making the world a better place */}
+          {/* </p> */}
+          <div className="flex items-center gap-4">
             <a href="https://github.com/ukcw">
-              <Icons.gitHub className="h-6 w-6 text-primary" />
+              <Icons.gitHub className="h-5 w-5" />
             </a>
             <a href="https://twitter.com/ukcw_">
-              <Icons.twitter className="h-6 w-6 fill-current" />
+              <Icons.twitter className="h-5 w-5 fill-current" />
             </a>
             <a href="https://www.linkedin.com/in/ulysses-kee/">
-              <Linkedin className="h-6 w-6 fill-current" />
+              <Linkedin className="h-5 w-5 fill-current" />
             </a>
-          </div>
-          <div className="lg:flex lg:gap-2 mt-24 text-lg lg:mt-44">
-            {/* <span>All rights reserved</span> */}
-            <span className="block lg:inline">© Ulysses Kee 2023</span>
           </div>
         </div>
       </div>
