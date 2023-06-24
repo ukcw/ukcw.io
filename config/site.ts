@@ -20,6 +20,12 @@ export const siteConfig = {
   },
   projects: [
     {
+      title: "dec-id",
+      description: "An anonymous credentials granting system using Zero-Knowledge Proofs and Chainlink's DECO. Built at IC3 Blockchain Camp 2023.",
+      repository: "https://github.com/topliceanu/IC3-dec-id",
+      useTitle: false,
+    },
+    {
       title: "Octoplorer",
       description: "A natural language query tool for the Ethereum blockchain.",
       repository:
