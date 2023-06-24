@@ -16,6 +16,7 @@ export const siteConfig = {
     docs: "https://ui.shadcn.com",
     cv: "https://read.cv/ukcw",
     resume: "/resume.pdf",
+    linkedin: "https://www.linkedin.com/in/ulysses-kee/",
   },
   projects: [
     {
