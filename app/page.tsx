@@ -1,7 +1,6 @@
 import Link from "next/link"
 
 import { siteConfig } from "@/config/site"
-import { cn } from "@/lib/utils"
 import { buttonVariants } from "@/components/ui/button"
 import { Icons } from "@/components/icons"
 
@@ -38,7 +37,7 @@ export default function IndexPage() {
           logic, and artificial intelligence form my theoretical interests.
         </p>
         <p className="text-base tracking-tighter text-muted-foreground">
-          I currently work as a <span className="underline underline-offset-4">Data Engineer Intern</span> at Binance.
+          I currently work as a <span className="underline underline-offset-4">Research Engineer</span> at Chainlink Labs.
         </p>
       </div>
       <div className="flex gap-4">
