@@ -21,7 +21,8 @@ export const siteConfig = {
   projects: [
     {
       title: "dec-id",
-      description: "An anonymous credentials granting system using Zero-Knowledge Proofs and Chainlink's DECO. Built at IC3 Blockchain Camp 2023.",
+      description:
+        "An anonymous credentials granting system using Zero-Knowledge Proofs and Chainlink's DECO. Built at IC3 Blockchain Camp 2023.",
       repository: "https://github.com/topliceanu/IC3-dec-id",
       useTitle: false,
     },
@@ -57,7 +58,8 @@ export const siteConfig = {
       title: "Definitional Interpreter for Scilla",
       description:
         "Built an evaluator for the Scilla language that runs in the browser.",
-      repository: "https://github.com/tramhnt99/scilla_parse",
+      repository: "/CS4215_Final_Report_Granada.pdf",
+      // repository: "https://github.com/tramhnt99/scilla_parse",
       useTitle: false,
     },
   ],
