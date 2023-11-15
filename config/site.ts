@@ -60,7 +60,7 @@ export const siteConfig = {
         "Built an evaluator for the Scilla language that runs in the browser.",
       repository: "/CS4215_Final_Report_Granada.pdf",
       // repository: "https://github.com/tramhnt99/scilla_parse",
-      useTitle: false,
+      useTitle: true,
     },
   ],
 }
