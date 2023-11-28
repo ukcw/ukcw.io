@@ -32,12 +32,18 @@ export default function IndexPage() {
           Hello, I&apos;m Ulysses
         </h1>
         <p className="text-base tracking-tighter text-muted-foreground">
-          You&apos;ve found my home on the internet. I&apos;m fascinated by software and remarkable user interfaces as
-          they form the medium for our interaction with any built system. Distributed systems, programming languages,
-          logic, and artificial intelligence form my theoretical interests.
+          You&apos;ve found my home on the internet. I&apos;m fascinated by
+          software and remarkable user interfaces as they form the medium for
+          our interaction with any built system. Distributed systems,
+          programming languages, formal logic, cryptography, and artificial
+          intelligence form my theoretical interests.
         </p>
         <p className="text-base tracking-tighter text-muted-foreground">
-          I currently work as a <span className="underline underline-offset-4">Research Engineer</span> at Chainlink Labs.
+          I currently work as a{" "}
+          <span className="underline underline-offset-4">
+            Research Engineer
+          </span>{" "}
+          at Chainlink Labs.
         </p>
       </div>
       <div className="flex gap-4">
@@ -78,9 +84,7 @@ export default function IndexPage() {
         </Link>
       </div>
       <div className="flex flex-col gap-4 pt-5">
-        <h2 className="text-sm leading-tight tracking-tighter">
-          Projects
-        </h2>
+        <h2 className="text-sm leading-tight tracking-tighter">Projects</h2>
         {siteConfig.projects?.length ? (
           <nav className="flex flex-col gap-6">
             {siteConfig.projects?.map(
