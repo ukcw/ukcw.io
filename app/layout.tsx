@@ -1,11 +1,11 @@
 import "@/styles/globals.css"
 import { Metadata } from "next"
+import { GoogleAnalytics } from "@next/third-parties/google"
 
 import { siteConfig } from "@/config/site"
 import { fontSans } from "@/lib/fonts"
 import { cn } from "@/lib/utils"
 import { Footer } from "@/components/footer"
-import { SiteHeader } from "@/components/site-header"
 import { TailwindIndicator } from "@/components/tailwind-indicator"
 import { ThemeProvider } from "@/components/theme-provider"
 
@@ -46,10 +46,11 @@ export default function RootLayout({ children }: RootLayoutProps) {
               {/* <SiteHeader /> */}
               <div className="flex-1 px-4 md:px-0">{children}</div>
             </div>
-              <Footer />
+            <Footer />
             <TailwindIndicator />
           </ThemeProvider>
         </body>
+        <GoogleAnalytics gaId="G-7LJSSL5NMC" />
       </html>
     </>
   )
